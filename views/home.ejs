@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Twitter</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <!-- <script src="script.js" defer ></script> -->
+</head>
+
+<body>
+  <input type="text" value="<%=token%>" id="token">
+  <div class="container">
+    <div class="sidebar">
+      <i class="fab fa-twitter"></i>
+
+      <div class="sidebarOption">
+        <span class="new active">
+          <span class="material-icons"> home </span><span class="option"> Home</span>
+        </span>
+      </div>
+      <div class="sidebarOption">
+        <span class="new">
+          <span class="material-icons"> tag</span><span class="option">Explore</span>
+        </span>
+      </div>
+      <div class="sidebarOption">
+        <span class="new">
+          <span class="material-icons"> notifications</span><span class="option">Notifications</span>
+        </span>
+      </div>
+      <div class="sidebarOption">
+        <span class="new">
+          <span class="material-icons"> mail</span><span class="option">Messages</span>
+        </span>
+      </div>
+      <div class="sidebarOption">
+        <span class="new">
+          <span class="material-icons"> bookmark</span><span class="option">Bookmarks</span>
+        </span>
+      </div>
+      <div class="sidebarOption">
+        <span class="new">
+          <span class="material-icons"> fact_check</span><span class="option">Lists</span>
+        </span>
+      </div>
+      <div class="sidebarOption">
+        <span class="new">
+          <span class="material-icons"> person </span><span class="option">Profile</span>
+        </span>
+      </div>
+      <div class="sidebarOption">
+        <span class="new">
+          <span class="material-icons"> more_horiz</span><span class="option">More</span>
+        </span>
+      </div>
+      <div class="tweetBtn">Tweet</div>
+    </div>
+    <div class="home enable">
+      <h3>Home</h3>
+      <hr />
+      <br />
+      <div class="tweetBox">
+        <a href=""><img src="/assets/images/profile.png" class="user_pfp" /></a>
+        <textarea style="
+              width: 50%;
+              margin-left: 1%;
+              resize: none;
+              border: none;
+              height: 50px;
+            " placeholder="What's happening?" maxlength="140"></textarea>
+        <button id="tweet_btn">Tweet</button>
+      </div>
+      <hr />
+      <br />
+      <div class="content">
+        <div>
+          <a href=""><img src="https://cdn.trendhunterstatic.com/phpthumbnails/458/458145/458145_1_800.jpeg"
+              class="user_pfp" /></a>
+        </div>
+
+        <div class="innerContent">
+
+          <div class="username">
+            <p><b>Irshad </b> <span id="username">@irshadchauhan</span></p>
+          </div>
+          <div class="usertweet">So what’s the next big crypto project man ? </div>
+          <div class="usericon">
+            <span class="material-icons">
+              chat_bubble_outline
+            </span>
+            <span class="material-icons">
+              swap_vert
+            </span>
+            <span class="material-icons">
+              favorite_border
+            </span>
+
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div>
+          <a href=""><img src="https://cdn.trendhunterstatic.com/phpthumbnails/458/458145/458145_1_800.jpeg"
+              class="user_pfp" /></a>
+        </div>
+
+        <div class="innerContent">
+
+          <div class="username">
+            <p><b>Irshad </b> <span id="username">@irshadchauhan</span></p>
+          </div>
+          <div class="usertweet"> An absolute genius who must be protected at all costs. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Labore laborum et commodi voluptatem maiores facere omnis voluptatum
+            doloremque. Vero aperiam aut eaque earum sunt explicabo impedit esse alias repudiandae.</div>
+          <div class="usericon">
+            <span class="material-icons">
+              chat_bubble_outline
+            </span>
+            <span class="material-icons">
+              swap_vert
+            </span>
+            <span class="material-icons">
+              favorite_border
+            </span>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="userprofile disable">
+      <div class="header">
+        <div class="headericon">
+          <span class="material-icons">
+            arrow_back
+          </span>
+        </div>
+        <div class="headertext">
+          <div>
+            <b>Irshad</b>
+          </div>
+          <div>43 Tweets</div>
+        </div>
+      </div>
+      <div class="userbackground">
+        <img src="https://pbs.twimg.com/profile_banners/1315714997499109376/1618323881/1500x500" alt="">
+      </div>
+      <div class="userprofileimage">
+        <div class="userimage">
+          <img src="/assets/images/profile.png" alt="">
+        </div>
+        <div class="editbtn">
+          <input type="button" value="Edit profile">
+        </div>
+      </div>
+      <div class="userbio">
+        <div class="personalname"><b>Irshad</b></div>
+        <div class="personalusername">@Irshad_Chauhan</div>
+        <div class="personalbio">Web Developer</div>
+        <div class="personalinfo">
+          <div class="personallocation"><span class="material-icons">
+              location_on
+            </span> Rajkot, India</div>
+          <div class="personaldateofbirth"> <span class="material-icons">
+              child_care
+            </span> Born February 1, 2000 </div>
+          <div class="personaldateofjoin">
+            <span class="material-icons">
+              calendar_month
+            </span> Joined october 2020
+          </div>
+        </div>
+        <div class="personalnumber">
+          <div class="following"> 85 Following</div>
+          <div class="followers"> 50 Followers</div>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="right-sidebar">
+      <input type="search" class="searchtext" placeholder="       Search Twitter" />
+      <div class="news">
+        <h2>What's Happening</h2>
+        <div class="card">
+          <a href="https://twitter.com/i/events/1483255084750282753">
+            <h4>Ukraine Live News</h4>
+          </a>
+          <img class="war"
+            src="https://c.ndtvimg.com/2022-02/tvpkfh_russia-ukraine-crisis-afp-650_625x300_27_February_22.jpg"
+            alt="" />
+          <br />
+          <p>
+            Latest satellite images show deployment of new Russian troops less
+            than 50 miles from Ukraine's capital. Russian President Vladimir
+            Putin ......
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
