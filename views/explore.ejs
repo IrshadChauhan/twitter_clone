@@ -14,22 +14,84 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/css/style.css" />
+  <!-- <script src="script.js" defer ></script> -->
 </head>
+<style>
+  body{
+    margin: 0;
+    padding: 0;
+    --twitter-color: #50b7f5;
+  --twitter-background: #fbfdff;
+  }
+    .explore{
+    min-width: 50%;
+  margin: 0.2rem 1rem;
+  margin-left: 24%;
+  margin-right: 30%;
+  }
 
+ input#exploresearch{
+    padding: 1rem;
+    border: 2px solid black;
+    border-radius: 26px;
+    width: 84%;
+  }
+
+  input#exploresearch::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-family: 'myFont', Arial, Helvetica, sans-serif;
+  font-size: 25px;
+}
+
+ .top{
+   display: flex;
+   align-items: center;
+ }
+
+
+
+ .people,.peopletweet{
+  display: flex;
+  align-items: center;
+  padding: 1rem 3rem;
+  font-size: 25px;
+  font-weight: 800;
+ }
+
+ .people:hover,.peopletweet:hover{
+border-bottom: 5px solid var(--twitter-color);
+transition: 100ms ease-in;
+font-size: 24px;
+ }
+
+ .usercard{
+   display: flex;
+   align-items: center;
+   padding: 1rem 3rem;
+ }
+
+ .usercardname{
+   margin-left: 1rem;
+   font-weight: 800;
+
+ }
+
+
+</style>
 
 <body>
+ 
   <div class="container">
     <div class="sidebar">
       <i class="fab fa-twitter"></i>
 
       <div class="sidebarOption">
-        <span class="new active">
+        <span class="new ">
           <span class="material-icons"> home </span><span class="option"> <a href="/home">Home</a></span>
         </span>
       </div>
       <div class="sidebarOption">
-        <span class="new ">
-          <span class="material-icons"> tag</span><span class="option"> <a href="/explore">Explore</a></span>
+        <span class="new active">
+          <span class="material-icons"> tag</span><span class="option">Explore</span>
         </span>
       </div>
       <div class="sidebarOption">
@@ -64,78 +126,52 @@
       </div>
       <div class="tweetBtn">Tweet</div>
     </div>
-    <div class="home">
-      <h3>Home</h3>
-      <hr />
-      <br />
-      <div class="tweetBox">
-        <a href=""><img src="/assets/images/profile.png" class="user_pfp" /></a>
-        <textarea style="
-              width: 50%;
-              margin-left: 1%;
-              resize: none;
-              border: none;
-              height: 50px;
-            " placeholder="What's happening?" maxlength="140"></textarea>
-        <button id="tweet_btn">Tweet</button>
+<div class="explore">
+  <div class="exploresearchdiv">
+    <input type="search" id="exploresearch" name="exploresearch" placeholder="            search">
+  </div>
+  <div class="top">
+    <div class="people">    <a href="/people">People</a> </div>
+    <div class="peopletweet"> <a href="/tweets">Tweets</a> </div>
+  </div>
+  <div>
+    <!-- <div class="usercard">
+      <div>
+        <a href=""><img src="https://cdn.trendhunterstatic.com/phpthumbnails/458/458145/458145_1_800.jpeg"
+            class="user_pfp" /></a>
       </div>
-      <hr />
-      <br />
-      <div class="content">
-        <div>
-          <a href=""><img src="https://cdn.trendhunterstatic.com/phpthumbnails/458/458145/458145_1_800.jpeg"
-              class="user_pfp" /></a>
-        </div>
-
-        <div class="innerContent">
-
-          <div class="username">
-            <p><b>Irshad </b> <span id="username">@irshadchauhan</span></p>
-          </div>
-          <div class="usertweet">So what’s the next big crypto project man ? </div>
-          <div class="usericon">
-            <span class="material-icons">
-              chat_bubble_outline
-            </span>
-            <span class="material-icons">
-              swap_vert
-            </span>
-            <span class="material-icons">
-              favorite_border
-            </span>
-
-          </div>
-        </div>
+      <div class="usercardname">Irshad Chauhan</div>
+    </div> -->
+    <div class="content">
+      <div>
+        <a href=""><img src="https://cdn.trendhunterstatic.com/phpthumbnails/458/458145/458145_1_800.jpeg"
+            class="user_pfp" /></a>
       </div>
-      <div class="content">
-        <div>
-          <a href=""><img src="https://cdn.trendhunterstatic.com/phpthumbnails/458/458145/458145_1_800.jpeg"
-              class="user_pfp" /></a>
+
+      <div class="innerContent">
+
+        <div class="username">
+          <p><b>Irshad </b> <span id="username">@irshadchauhan</span></p>
         </div>
+        <div class="usertweet"> An absolute genius who must be protected at all costs. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Labore laborum et commodi voluptatem maiores facere omnis voluptatum
+          doloremque. Vero aperiam aut eaque earum sunt explicabo impedit esse alias repudiandae.</div>
+        <div class="usericon">
+          <span class="material-icons">
+            chat_bubble_outline
+          </span>
+          <span class="material-icons">
+            swap_vert
+          </span>
+          <span class="material-icons">
+            favorite_border
+          </span>
 
-        <div class="innerContent">
-
-          <div class="username">
-            <p><b>Irshad </b> <span id="username">@irshadchauhan</span></p>
-          </div>
-          <div class="usertweet"> An absolute genius who must be protected at all costs. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Labore laborum et commodi voluptatem maiores facere omnis voluptatum
-            doloremque. Vero aperiam aut eaque earum sunt explicabo impedit esse alias repudiandae.</div>
-          <div class="usericon">
-            <span class="material-icons">
-              chat_bubble_outline
-            </span>
-            <span class="material-icons">
-              swap_vert
-            </span>
-            <span class="material-icons">
-              favorite_border
-            </span>
-
-          </div>
         </div>
       </div>
     </div>
+  </div>
+</div>
     <div class="right-sidebar">
       <input type="search" class="searchtext" placeholder="       Search Twitter" />
       <div class="news">

@@ -37,17 +37,30 @@ app.get("/", (req, res) => {
   res.render("landing");
 });
 
-app.get("/register", (req, res) => {
+app.get("/signup", (req, res) => {
   res.render("signup");
 });
 
 app.get("/login", (req, res) => {
-  res.render("signin");
+  res.render("login");
 });
 
 app.get("/home", (req, res) => {
   res.render("home");
 });
+
+app.get("/explore", (req, res) => {
+  res.render("explore");
+});
+
+app.get("/people", (req, res) => {
+  res.render("people");
+});
+
+app.get("/tweets", (req, res) => {
+  res.render("tweets");
+});
+
 //======================POST===========================//
 app.post("/register", async (req, res) => {
   console.log(req.body);
@@ -110,7 +123,3 @@ app.post("/login", (req, res) => {
     console.log(err);
   }
 });
-
-// vikr
-
-console.log("hekoih");

@@ -9,6 +9,15 @@ body {
   --twitter-background: #fbfdff;
   font-family: "Open Sans", sans-serif;
 }
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
 .container {
   display: flex;
 }
@@ -82,14 +91,6 @@ body {
 
 /* center started */
 /* home started */
-
-.enable {
-  display: block;
-}
-
-.disable {
-  display: none;
-}
 
 .home {
   min-width: 50%;

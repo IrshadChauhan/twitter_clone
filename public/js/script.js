@@ -10,17 +10,17 @@
 // });
 // // console.log(Array.from(sidebarOptions));
 
-var sidebarOptions = document.querySelectorAll(".sidebarOption");
-console.log(sidebarOptions);
+// var sidebarOptions = document.querySelectorAll(".sidebarOption");
+// console.log(sidebarOptions);
 
-sidebarOptions.forEach((el) => {
-  el.addEventListener("click", (e) => {
-    console.log(e.target);
-    e.classList.add("active");
-    console.log("clicked");
-  });
-});
+// sidebarOptions.forEach((el) => {
+//   el.addEventListener("click", (e) => {
+//     console.log(e.target);
+//     e.target.classList.add("active");
+//     console.log("clicked");
+//   });
+// });
 
-window.onload(e => {
+window.onload((e) => {
   localStorage.setItem("token", document.getElementById("token").value);
-})
+});
